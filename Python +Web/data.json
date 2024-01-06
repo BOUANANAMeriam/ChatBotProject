@@ -1,0 +1,216 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Bonjour", "Salut", "Coucou", "Hello", "Hey","salam"],
+      "responses": ["Bonjour ! Comment puis-je vous aider ?", "Salut ! en quoi puis-je vous assister ?", "Coucou ! Que puis-je faire pour vous ?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "Bonne journee", "a plus tard", "a bientot","bye"],
+      "responses": ["Au revoir ! Passez une excellente journee.", "a plus tard ! Prenez soin de vous.", "a bientot ! N'hesitez pas a revenir si vous avez besoin d'aide."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Merci", "Je vous remercie", "C'est utile", "Super, merci", "Merci de m'aider","thanks","thank you"],
+      "responses": ["De rien ! Je suis la pour vous aider.", "Toujours a votre service !", "C'est un plaisir de vous assister."],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["Desole, je ne comprends pas.", "Pouvez-vous fournir plus d'informations s'il vous plait ?", "Je ne suis pas sur de comprendre."],
+      "context": [""]
+    },{
+      "tag": "connaissance",
+      "patterns": ["", "qui etes vous ?", "c'est qui ?", "je parle avec qui?"],
+      "responses": ["Vous parlez avec ChatBot, un modele de langage developpe . Je suis ici pour repondre a vos questions et vous aider avec vos preoccupations. Que puis-je faire pour vous aujourd'hui ?",
+      "Je suis le ChatBot de service clientele. Je suis un modele de langage developpe . Je suis conçu pour comprendre et generer du texte en utilisant des techniques d'intelligence artificielle avancees. Mon objectif est de vous aider en repondant a vos questions et en vous fournissant des informations pertinentes. Comment puis-je vous assister aujourd'hui ?"],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": ["", "Quelles sont vos offres ?", "Quels services proposez-vous ?", "en quoi pouvez-vous m'aider ?"],
+      "responses": ["Nous avons une gamme de forfaits adaptes a vos besoins.", "Nous offrons differents services, y compris des forfaits personnalisables."],
+      "context": [""]
+    },
+    {
+      "tag": "plan_details",
+      "patterns": ["Quels sont les details du forfait", "en quoi consiste le forfait", "Quelles sont les caracteristiques du plan", "Qu'est-ce que j'obtiens avec ce forfait"],
+      "responses": ["Notre forfait comprend des appels illimites, des SMS illimites et une grande quantite de donnees mobiles.", "Avec notre forfait, vous beneficiez d'appels et de SMS illimites, ainsi que d'une connexion Internet rapide."],
+      "context": [""]
+    },
+    {
+      "tag": "data_usage",
+      "patterns": ["Comment puis-je verifier ma consommation de donnees ?", "Combien de donnees ai-je utilise ?", "Quel est mon quota de donnees restant ?", "Verifier l'utilisation de mes donnees"],
+      "responses": ["Vous pouvez verifier votre consommation de donnees dans l'application compagnon de telephone.", "Dans l'application compagnon, vous trouverez des informations detaillees sur votre utilisation de donnees."],
+      "context": [""]
+    },
+    {
+      "tag": "upgrade_plan",
+      "patterns": ["Puis-je mettre a niveau mon forfait ?", "Comment passer a un forfait superieur ?", "Ameliorer mon plan", "Changer de forfait"],
+      "responses": ["Oui, vous pouvez mettre a niveau votre forfait. Veuillez contacter notre service client pour obtenir plus d'informations.", "Pour passer a un forfait superieur, veuillez visiter notre site web ou contacter notre equipe de vente."],
+      "context": [""]
+    },
+    {
+      "tag": "billing",
+      "patterns": ["Comment puis-je consulter ma facture ?", "Quand est-ce que ma facture est due ?", "Où puis-je payer ma facture ?", "Probleme de facturation"],
+      "responses": ["Vous pouvez consulter votre facture en vous connectant a votre compte en ligne.", "La date d'echeance de votre facture est generalement indiquee sur votre facture mensuelle. Vous pouvez effectuer le paiement en ligne ou dans l'un de nos magasins partenaires."],
+      "context": [""]
+    },
+    {
+      "tag": "coverage",
+      "patterns": ["Quelle est la couverture reseau dans ma region ?", "Comment verifier la couverture reseau ?", "Probleme de reseau", "Couverture reseau"],
+      "responses": ["Pour verifier la couverture reseau dans votre region, veuillez visiter notre site web ou contacter notre service client.", "Nous avons une couverture reseau etendue, mais si vous rencontrez des problemes, veuillez nous contacter pour obtenir de l'aide."],
+      "context": [""]
+    },
+    {
+      "tag": "lost_phone",
+      "patterns": ["J'ai perdu mon telephone", "Mon telephone a ete vole", "Que faire si je perds mon telephone ?", "Comment signaler un telephone perdu ?"],
+      "responses": ["Si vous avez perdu votre telephone, veuillez contacter notre service client immediatement. Nous vous aiderons a prendre les mesures necessaires, y compris la suspension de votre ligne.", "en cas de perte ou de vol de votre telephone, veuillez nous contacter des que possible pour signaler l'incident et prendre les mesures appropriees."],
+      "context": [""]
+    },
+    {
+      "tag": "data_plans",
+      "patterns": ["Quels sont les differents types de forfaits de donnees ?", "Quel forfait de donnees me convient le mieux ?", "Forfaits de donnees disponibles", "Quelle quantite de donnees dois-je choisir ?"],
+      "responses": ["Nous proposons differents types de forfaits de donnees, tels que des forfaits mensuels avec des quantites variables de donnees.", "Le choix du forfait de donnees depend de votre utilisation. Nous pouvons vous aider a trouver le forfait qui vous convient le mieux en fonction de vos besoins."],
+      "context": [""]
+    },
+    {
+      "tag": "network_issues",
+      "patterns": ["J'ai des problemes de connexion", "Le reseau est lent", "Mon telephone ne se connecte pas", "Problemes de reseau mobile"],
+      "responses": ["Si vous rencontrez des problemes de connexion, vous pouvez essayer de redemarrer votre telephone ou de rechercher les parametres reseau.", "Les problemes de reseau peuvent parfois être dus a une couverture insuffisante dans certaines zones. Veuillez nous fournir votre emplacement pour que nous puissions vous aider davantage."],
+      "context": [""]
+    }
+ ,
+    {
+      "tag": "data_plans",
+      "patterns": ["Quels sont les differents types de forfaits de donnees ?", "Quel forfait me convient le mieux ?", "Forfaits de donnees disponibles", "Quelle quantite de donnees dois-je choisir ?"],
+      "responses": ["Nous proposons differents types de forfaits de donnees, tels que des forfaits mensuels avec des quantites variables de donnees.", "Le choix du forfait de donnees depend de votre utilisation. Nous pouvons vous aider a trouver le forfait qui vous convient le mieux en fonction de vos besoins."],
+      "context": [""]
+    },
+    {
+      "tag": "network_issues",
+      "patterns": ["J'ai des problemes de connexion", "Le reseau est lent", "Mon telephone ne se connecte pas", "Problemes de reseau mobile"],
+      "responses": ["Si vous rencontrez des problemes de connexion, vous pouvez essayer de redemarrer votre telephone ou de rechercher les parametres reseau.", "Les problemes de reseau peuvent parfois être dus a une couverture insuffisante dans certaines zones. Veuillez nous fournir votre emplacement pour que nous puissions vous aider davantage."],
+      "context": [""]
+    },
+    {
+      "tag": "data_balance",
+      "patterns": ["Comment puis-je verifier mon solde de donnees ?", "Quel est le solde de mes donnees restantes ?", "Verifier ma consommation de donnees"],
+      "responses": ["Pour verifier votre solde de donnees restantes, vous pouvez envoyer un SMS avec le mot-cle 'BALANCe' au numero de service approprie.", "Vous pouvez egalement verifier votre solde de donnees en vous connectant a votre compte en ligne ou en utilisant notre application mobile."],
+      "context": [""]
+    },
+    {
+      "tag": "international_roaming",
+      "patterns": ["Comment puis-je activer l'itinerance internationale ?", "Quels sont les tarifs d'itinerance internationale ?", "Besoin d'itinerance pour voyager"],
+      "responses": ["Pour activer l'itinerance internationale, vous pouvez vous connecter a votre compte en ligne ou contacter notre service client.", "Les tarifs d'itinerance internationale dependent de votre destination et du forfait que vous avez. Veuillez nous fournir plus de details pour obtenir des informations precises sur les tarifs."],
+      "context": [""]
+    },
+    {
+      "tag": "technical_support",
+      "patterns": ["J'ai des problemes techniques avec mon telephone", "Mon telephone ne fonctionne pas correctement", "Besoin d'assistance technique", "Problemes de signal"],
+      "responses": ["Si vous rencontrez des problemes techniques avec votre telephone, vous pouvez contacter notre service client pour obtenir une assistance technique.", "Veuillez nous fournir plus de details sur les problemes que vous rencontrez afin que nous puissions vous aider de la meilleure façon possible."],
+      "context": [""]
+    },
+    {
+      "tag": "bill_payment",
+      "patterns": ["Comment puis-je payer ma facture ?", "Quelles sont les options de paiement disponibles ?", "Besoin de regler ma facture"],
+      "responses": ["Vous pouvez payer votre facture en ligne via notre site web ou en utilisant notre application mobile.", "Nous acceptons egalement les paiements en especes, par cheque ou par virement bancaire. Veuillez nous contacter pour obtenir plus d'informations sur les options de paiement disponibles."],
+      "context": [""]
+    },
+    {
+      "tag": "change_phone_number",
+      "patterns": ["Comment puis-je changer mon numero de telephone ?", "Besoin de changer mon numero", "Problemes avec mon numero actuel"],
+      "responses": ["Pour changer votre numero de telephone, veuillez contacter notre service client. Ils vous guideront tout au long du processus de changement de numero.", "Veuillez noter qu'il peut y avoir des frais associes au changement de numero de telephone."],
+      "context": [""]
+    },
+    {
+      "tag": "account_activation",
+      "patterns": ["Comment puis-je activer mon compte en ligne ?", "Besoin d'activer mon compte", "Problemes d'activation du compte"],
+      "responses": ["Pour activer votre compte en ligne, veuillez suivre les instructions fournies dans l'e-mail de bienvenue que vous avez reçu lors de votre inscription.", "Si vous rencontrez des problemes d'activation du compte, veuillez contacter notre service client pour obtenir de l'aide."],
+      "context": [""]
+    },
+    {
+      "tag": "lost_sim_card",
+      "patterns": ["J'ai perdu ma carte SIM", "Ma carte SIM est endommagee", "Comment obtenir une nouvelle carte SIM ?", "Problemes avec ma carte SIM"],
+      "responses": ["Si vous avez perdu votre carte SIM ou si elle est endommagee, veuillez contacter notre service client pour obtenir une nouvelle carte SIM.", "Veuillez noter qu'il peut y avoir des frais associes au remplacement de la carte SIM."],
+      "context": [""]
+    },
+    {
+      "tag": "data_add-ons",
+      "patterns": ["Comment puis-je ajouter des donnees supplementaires a mon forfait ?", "Besoin d'ajouter plus de donnees a mon plan", "Forfaits de donnees supplementaires"],
+      "responses": ["Pour ajouter des donnees supplementaires a votre forfait, vous pouvez vous connecter a votre compte en ligne ou contacter notre service client.", "Nous proposons egalement des forfaits de donnees supplementaires que vous pouvez ajouter temporairement a votre plan existant."],
+      "context": [""]
+    },
+    {
+      "tag": "cancel_service",
+      "patterns": ["Comment puis-je annuler mon service ?", "Besoin d'annuler mon abonnement", "Problemes avec mon service actuel"],
+      "responses": ["Pour annuler votre service, veuillez contacter notre service client. Ils vous guideront tout au long du processus d'annulation.", "Veuillez noter qu'il peut y avoir des frais d'annulation associes a votre contrat."],
+      "context": [""]
+    },
+    {
+      "tag": "international_calls",
+      "patterns": ["Comment puis-je effectuer des appels internationaux ?", "Tarifs des appels internationaux", "Besoin de passer des appels a l'etranger"],
+      "responses": ["Pour effectuer des appels internationaux, vous pouvez ajouter l'option d'appels internationaux a votre forfait ou utiliser des cartes d'appels prepayees.", "Les tarifs des appels internationaux varient en fonction du pays que vous appelez. Veuillez nous fournir plus de details pour obtenir des informations precises sur les tarifs."],
+      "context": [""]
+    },
+    {
+      "tag": "data_roaming",
+      "patterns": ["Comment puis-je activer l'itinerance des donnees ?", "Tarifs d'itinerance des donnees", "Besoin d'itinerance des donnees pour voyager"],
+      "responses": ["Pour activer l'itinerance des donnees, vous pouvez vous connecter a votre compte en ligne ou contacter notre service client.", "Les tarifs d'itinerance des donnees dependent de votre destination et du forfait que vous avez. Veuillez nous fournir plus de details pour obtenir des informations precises sur les tarifs."],
+      "context": [""]
+    },
+    {
+      "tag": "phone_compatibility",
+      "patterns": ["Mon telephone est-il compatible avec votre reseau ?", "Besoin de verifier la compatibilite de mon telephone", "Problemes de compatibilite du telephone"],
+      "responses": ["Pour verifier la compatibilite de votre telephone avec notre reseau, veuillez contacter notre service client avec les details de votre telephone.", "Nous vous aiderons a determiner si votre telephone est compatible avec notre reseau."],
+      "context": [""]
+    },
+    {
+      "tag": "service_outage",
+      "patterns": ["Y a-t-il une panne de service dans ma region ?", "Besoin de verifier les pannes de service", "Problemes de service"],
+      "responses": ["Pour verifier s'il y a une panne de service dans votre region, veuillez consulter notre site web ou contacter notre service client.", "Nous nous efforçons de resoudre rapidement les pannes de service et de minimiser les interruptions pour nos clients."],
+      "context": [""]
+    },
+    {
+      "tag": "voicemail_setup",
+      "patterns": ["Comment configurer ma messagerie vocale ?", "Besoin d'aide pour configurer ma boite vocale", "Problemes avec ma messagerie vocale"],
+      "responses": ["Pour configurer votre messagerie vocale, veuillez suivre les instructions fournies dans le guide d'utilisation de votre telephone ou contacter notre service client pour obtenir de l'aide.", "Nous serons ravis de vous guider tout au long du processus de configuration de votre boite vocale."],
+      "context": [""]
+    },
+    {
+      "tag": "refund",
+      "patterns": ["Comment puis-je demander un remboursement ?", "Besoin de demander un remboursement", "Problemes de facturation"],
+      "responses": ["Pour demander un remboursement, veuillez contacter notre service client avec les details de votre demande de remboursement.", "Nous examinerons votre demande de remboursement et vous fournirons les informations necessaires sur le processus."],
+      "context": [""]
+    },
+    {
+      "tag": "data_speed",
+      "patterns": ["Quelle est la vitesse de donnees offerte dans votre reseau ?", "Besoin de connaitre la vitesse de donnees", "Problemes de vitesse de donnees"],
+      "responses": ["La vitesse de donnees offerte dans notre reseau depend du forfait que vous avez choisi.", "Veuillez nous fournir plus de details sur les problemes de vitesse de donnees que vous rencontrez afin que nous puissions vous aider de la meilleure façon possible."],
+      "context": [""]
+    },
+    {
+      "tag": "account_balance",
+      "patterns": ["Comment puis-je verifier le solde de mon compte ?", "Besoin de connaitre mon solde de compte", "Problemes avec le solde de mon compte"],
+      "responses": ["Pour verifier le solde de votre compte, vous pouvez vous connecter a votre compte en ligne ou utiliser notre application mobile.", "Si vous rencontrez des problemes avec le solde de votre compte, veuillez contacter notre service client pour obtenir de l'aide."],
+      "context": [""]
+    },
+    {
+      "tag": "upgrade_device",
+      "patterns": ["Comment puis-je mettre a niveau mon appareil ?", "Besoin de mettre a niveau mon telephone", "Problemes avec mon appareil actuel"],
+      "responses": ["Pour mettre a niveau votre appareil, veuillez contacter notre service client. Ils vous guideront tout au long du processus de mise a niveau.", "Veuillez noter qu'il peut y avoir des frais associes a la mise a niveau de votre appareil."],
+      "context": [""]
+    }
+    ,
+    {
+      "tag": "emotions",
+      "patterns": [" avez vous des emotions", "Amour", "Les larmes coulent sur mes joues","Je suis furieux contre cette injustice, ça me met hors de moi ","Joie "],
+      "responses": ["en tant qu'intelligence artificielle, je n'ai pas de capacite a ressentir des emotions ou a exprimer de l'affection. Je suis ici pour fournir des reponses, des informations et de l'aide dans la mesure de mes capacites. Si vous avez des questions ou des preoccupations, n'hesitez pas a les partager, et je ferai de mon mieux pour vous assister.", "en tant qu'intelligence artificielle, je n'ai pas de conscience ni d'emotions. Je suis un programme informatique conçu pour traiter et generer du texte en fonction des modeles et des donnees sur lesquels j'ai ete forme. Je suis capable de fournir des reponses basees sur ces modeles, mais je n'ai pas de sensations, d'experiences subjectives ou d'emotions comme le font les êtres humains"],
+      "context": [""]
+    }
+  ]
+}
